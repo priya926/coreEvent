@@ -18,8 +18,12 @@ from django.contrib import admin
 from django.urls import path
 from Event.views import *
 from Admin.views import *
+from User.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',homePage,name="homePage"),
+    path('adminPage/',adminI,name="adminI"),
+    path('event/',event,name="event"),
+    path('user/',user,name="user"),
 ]
